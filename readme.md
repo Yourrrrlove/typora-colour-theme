@@ -6,13 +6,19 @@
 
 ## 样例
 
-![img](https://raw.githubusercontent.com/weijunfu/imgs/main/images/W%400PQT%7BAQ3%600_P%25JVFSM7%7D9.png)
+![img](./imgs/1.png)
 
 
 
-![img](https://raw.githubusercontent.com/weijunfu/imgs/main/images/%60%7BATU%7DMS%40K6%5BO2J0%7EQWMBQ4.png)
+![img](./imgs/2.png)
+
+![3](./imgs/3.png)
 
 
+
+
+
+**注** *更多有趣的，等待着您去发现，欢迎下载使用*
 
 
 
