@@ -159,6 +159,7 @@ a {
 }
 
 #write h1::after {
+	margin: 0 auto;
 	content: '';
 	display: block;
 	width: 100%;

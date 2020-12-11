@@ -63,3 +63,12 @@
 
 + 1.0.1 修改标题动画
 
++ 1.0.2 修改H1底线
+
+
+## 附录
+
++ CSS压缩
+```
+uglifycss colour.css > colour.min.css
+```
