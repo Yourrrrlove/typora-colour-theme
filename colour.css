@@ -31,6 +31,8 @@
 	--color-8: #a0eee1;
 	--color-9: #8cc7b5;
 	--color-10: #19caad
+  --button-1: #AAE9E0;
+  --button-2: #AAE9B9;
 }
 
 body {
@@ -82,6 +84,28 @@ a {
 	color: var(--purple-1);
 	text-decoration: none;
 	padding: 6px 12px;
+}
+
+#write button {
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  color: #f5f5f5;
+  padding: 5px 20px;
+  color:#f5f5f5;
+  background-image: -webkit-linear-gradient(to right, #AAE9E0 0%, #AAE9B9 100%);
+  background-image: -moz-linear-gradient(to right, #AAE9E0 0%, #AAE9B9 100%);
+  background-image: -ms-linear-gradient(to right, #AAE9E0 0%, #AAE9B9 100%);
+  background-image: -o-linear-gradient(to right, #AAE9E0 0%, #AAE9B9 100%);
+  background-image: linear-gradient(to right, #AAE9E0 0%, #AAE9B9 100%);
+}
+
+#write button:hover {
+  background-image: -webkit-linear-gradient(to right, #72C5D2 0%, #51A0DD 100%);
+  background-image: -moz-linear-gradient(to right, #72C5D2 0%, #51A0DD 100%);
+  background-image: -ms-linear-gradient(to right, #72C5D2 0%, #51A0DD 100%);
+  background-image: -o-linear-gradient(to right, #72C5D2 0%, #51A0DD 100%);
+  background-image: linear-gradient(to right, #72C5D2 0%, #51A0DD 100%);
 }
 
 #write h1,

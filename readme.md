@@ -4,6 +4,16 @@
 
 
 
+<a href="https://gitee.com/weijunfu/typora-colour-theme"><button>→ Gitee</button></a>
+
+
+
+<a href="https://github.com/weijunfu/typora-colour-theme"><button>→ Github</button></a>
+
+
+
+
+
 ## 样例
 
 ![img](./imgs/1.png)
@@ -61,9 +71,9 @@
 
 
 
-+ 1.0.1 修改标题动画
-
++ 1.0.3 添加 “按钮”样式
 + 1.0.2 修改H1底线
++ 1.0.1 修改标题动画
 
 
 ## 附录
