@@ -622,6 +622,11 @@ a {
 	list-style-image: url(http://m.qpic.cn/psc?/V54Lnx5m1Y1WpR0e39pp0UZCFU1H8I5t/bqQfVz5yrrGYSXMvKr.cqdBcqhBazFN9znbqA*tUdy1fDTp3BsJLEOqW9aKQmIeHQFCF9tUIyv9wmzMYu9WrgtlMQ2aj3Cs*MqATHLV8Bgo!/b&bo=EAAQABAAEAADCSw!&rf=viewer_4)
 }
 
+/* 当有序列表中嵌入可选的无序列表时，不显示图片 */
+#write ol ul li {
+  list-style-image: none;
+}
+
 #write ul>li>ul>li {
 	list-style-image: url(http://m.qpic.cn/psc?/V54Lnx5m1Y1WpR0e39pp0UZCFU1H8I5t/bqQfVz5yrrGYSXMvKr.cqUW*sNTUNlZgBHF6FwtWBublmhg1SDJjb0HvoFSyAX05FzKu1*vgfigTlkqQLbyAmO5edhTXvccf9OtRxmTbcgI!/mnull&bo=EAAQABAAEAADCSw!&rf=photolist&t=5)
 }
@@ -914,8 +919,13 @@ body>#write>h6:first-child {
 }
 
 #write em {
-	padding: 0 5px 0 2px;
-	color: #42b983;
+	padding: 0 8px;
+	color: var(--color-9);
+}
+
+#write strong em {
+  padding: 0 6px;
+  color: var(--color-4);
 }
 
 #write code,
