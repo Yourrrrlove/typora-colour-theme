@@ -193,8 +193,11 @@ a {
 	display: block;
 	width: 100%;
 	height: 4px;
-	animation: bgAni 8s infinite;
-	background: var(--base-color-1);
+  background: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+  background: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+  background: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+  background: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+	animation: bgAni 2s ease-in-out infinite;
 }
 
 #write h2::after,
@@ -205,33 +208,30 @@ a {
 	content: '';
 	display: block;
 	height: 2px;
-	width: 60%;
+	width: 100%;
 	background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
 	background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
 	background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
 	background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
 }
 
-#write h2::after {
-	animation: bgAni 10s infinite;
-}
-
-#write h3::after {
-	animation: bgAni 12s infinite;
-}
-
-#write h4::after {
-	animation: bgAni 14s infinite;
-}
-
-#write h5::after {
-	animation: bgAni 16s infinite;
-}
-
+#write h2::after,
+#write h3::after,
+#write h4::after,
+#write h5::after,
 #write h6::after {
-	animation: bgAni 18s infinite;
+	animation: bgAni 2s ease-in-out infinite;
 }
 
+
+@keyframes bgAni {
+	to {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
+	}
+}
 
 #write h2 {
 	font-size: 1.8em;
@@ -296,7 +296,6 @@ a {
 	width: 6px;
 	height: 6px;
 	border-radius: 50%;
-	/* animation: cicleAni 2s infinite; */
 }
 
 #write h2::before {
@@ -574,25 +573,6 @@ a {
 		-moz-transform: translate(0, -1rem);
 		-ms-transform: translate(0, -1rem);
 		-o-transform: translate(0,-1rem);
-	}
-}
-
-
-@keyframes bgAni {
-	from {
-		width: 40%;
-		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-	}
-
-	to {
-		width: 100%;
-		background-image: -webkit-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-		background-image: -moz-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-		background-image: -ms-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-		background-image: linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
 	}
 }
 
