@@ -46,6 +46,13 @@ body {
 	overflow-x: hidden;
 }
 
+
+@media sscreen and (max-width: 600px) {
+	body {
+		width: 600px;
+	}
+}
+
 #write {
 	padding-left: 6ch;
 	padding-right: 6ch;
@@ -590,7 +597,7 @@ a {
 #write ol,
 #write dl,
 #write table {
-	margin: .8em 0;
+	margin: auto 0;
 }
 
 #write li>ol,
@@ -630,34 +637,25 @@ a {
 #write ol>li {
 	margin-top: 1rem;
 	counter-increment: firstCounterTotal;
-	border-radius: 0.5rem;
-}
-
-#write ol>li>span,
-#write ol>li>p {
-	padding-left: 0.5rem;
-}
-
-#write ol>li>p {
-	display: inline-block;
 }
 
 #write ol>li::before {
 	display: inline-block;
-	content: '';
+	content: counter(firstCounterTotal);
 	background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
 	background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
 	background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
 	background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
 	color: #fff;
-	border-radius: 0.5rem;
+	border-radius: .5rem;
 	text-align: center;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	margin-right: .5rem;
 }
 
-#write ol>li::before {
-	content: counter(firstCounterTotal);
+#write ol>li p {
+	display: inline-block;
 }
 
 #write ol>li>ol>li {
@@ -705,10 +703,10 @@ a {
 #write ol>li>ol>li>ol:nth-child(4n)>li::before,
 #write ol>li>ol>li>ol>li>ol:nth-child(5n)>li::before,
 #write ol>li>ol>li>ol>li>ol>li>ol:nth-child(6n)>li::before {
-	background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-3) 50%, var(--base-color-2) 100%);
-	background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-3) 50%, var(--base-color-2) 100%);
-	background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-3) 50%, var(--base-color-2) 100%);
-	background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-3) 50%, var(--base-color-2) 100%);
+	background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-3) 30%, var(--base-color-2) 100%);
+	background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-3) 30%, var(--base-color-2) 100%);
+	background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-3) 30%, var(--base-color-2) 100%);
+	background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-3) 30%, var(--base-color-2) 100%);
 }
 
 #write ol:nth-child(3n)>li::before,
@@ -716,10 +714,10 @@ a {
 #write ol>li>ol>li>ol:nth-child(5n)>li::before,
 #write ol>li>ol>li>ol>li>ol:nth-child(6n)>li::before,
 #write ol>li>ol>li>ol>li>ol>li>ol:nth-child(2n)>li::before {
-	background-image: -webkit-linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-1) 50%, var(--base-color-3) 100%);
-	background-image: -moz-linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-1) 50%, var(--base-color-3) 100%);
-	background-image: -ms-linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-1) 50%, var(--base-color-3) 100%);
-	background-image: linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-1) 50%, var(--base-color-3) 100%);
+	background-image: -webkit-linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-1) 30%, var(--base-color-3) 100%);
+	background-image: -moz-linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-1) 30%, var(--base-color-3) 100%);
+	background-image: -ms-linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-1) 30%, var(--base-color-3) 100%);
+	background-image: linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-1) 30%, var(--base-color-3) 100%);
 }
 
 #write ol:nth-child(4n)>li::before,
@@ -727,10 +725,10 @@ a {
 #write ol>li>ol>li>ol:nth-child(6n)>li::before,
 #write ol>li>ol>li>ol>li>ol:nth-child(2n)>li::before,
 #write ol>li>ol>li>ol>li>ol>li>ol:nth-child(3n)>li::before {
-	background-image: -webkit-linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-3) 50%, var(--base-color-1) 100%);
-	background-image: -moz-linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-3) 50%, var(--base-color-1) 100%);
-	background-image: -ms-linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-3) 50%, var(--base-color-1) 100%);
-	background-image: linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-3) 50%, var(--base-color-1) 100%);
+	background-image: -webkit-linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-3) 30%, var(--base-color-1) 100%);
+	background-image: -moz-linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-3) 30%, var(--base-color-1) 100%);
+	background-image: -ms-linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-3) 30%, var(--base-color-1) 100%);
+	background-image: linear-gradient(45deg, var(--base-color-2) 0, var(--base-color-3) 30%, var(--base-color-1) 100%);
 }
 
 #write ol:nth-child(5n)>li::before,
@@ -738,10 +736,10 @@ a {
 #write ol>li>ol>li>ol:nth-child(2n)>li::before,
 #write ol>li>ol>li>ol>li>ol:nth-child(3n)>li::before,
 #write ol>li>ol>li>ol>li>ol>li>ol:nth-child(4n)>li::before {
-	background-image: -webkit-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-1) 50%, var(--base-color-2) 100%);
-	background-image: -moz-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-1) 50%, var(--base-color-2) 100%);
-	background-image: -ms-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-1) 50%, var(--base-color-2) 100%);
-	background-image: linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-1) 50%, var(--base-color-2) 100%);
+	background-image: -webkit-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-1) 30%, var(--base-color-2) 100%);
+	background-image: -moz-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-1) 30%, var(--base-color-2) 100%);
+	background-image: -ms-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-1) 30%, var(--base-color-2) 100%);
+	background-image: linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-1) 30%, var(--base-color-2) 100%);
 }
 
 #write ol:nth-child(6n)>li::before,
@@ -749,12 +747,10 @@ a {
 #write ol>li>ol>li>ol:nth-child(3n)>li::before,
 #write ol>li>ol>li>ol>li>ol:nth-child(4n)>li::before,
 #write ol>li>ol>li>ol>li>ol>li>ol:nth-child(5n)>li::before {
-	background-image: -webkit-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-	background-image: -moz-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-	background-image: -ms-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-	background-image: linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-	/* color: transparent;
-		-webkit-background-clip: text; */
+	background-image: -webkit-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 30%, var(--base-color-1) 100%);
+	background-image: -moz-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 30%, var(--base-color-1) 100%);
+	background-image: -ms-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 30%, var(--base-color-1) 100%);
+	background-image: linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 30%, var(--base-color-1) 100%);
 }
 
 #write hr {
@@ -839,7 +835,7 @@ body>#write>h6:first-child {
 
 #write blockquote {
 	display: block;
-	padding: 0.5rem;
+	padding: .5rem;
 	margin: 0 0 24px;
 	border-left: 8px solid #dddfe4;
 	background: #eef0f4;
