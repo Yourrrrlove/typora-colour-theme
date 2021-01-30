@@ -22,9 +22,9 @@
 	--base-color-2: #ff80d5;
 	--base-color-3: #ff4040;
 	--color-1: #f4606c;
-	--color-2: #ecad9e;
-	--color-3: #e6ceac;
-	--color-4: #d1ba74;
+	--color-2: #d1ba74;
+	--color-3: #ecad9e;
+	--color-4: #e6ceac;
 	--color-5: #d6d5b7;
 	--color-6: #beedc7;
 	--color-7: #bee7e9;
@@ -47,7 +47,7 @@ body {
 }
 
 
-@media sscreen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	body {
 		width: 600px;
 	}
@@ -132,7 +132,7 @@ a {
 	font-weight: 500 !important;
 	line-height: 1.4;
 	cursor: text;
-	color: var(--title-color);
+	/* color: var(--title-color); */
 	font-family: var(--font-sans-serif);
 }
 
@@ -174,120 +174,42 @@ a {
 	-webkit-background-clip: text;
 }
 
-@keyframes autoTitle {
-	from {
-		background: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-		background: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-		background: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-		background: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-		color: transparent;
-		-webkit-background-clip: text;
-	}
-
-	to {
-		background: -webkit-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-		background: -moz-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-		background: -ms-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-		background: linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-		-webkit-background-clip: text;
-		color: transparent;
-	}
-}
-
 #write h1::after {
 	margin: 0 auto;
 	content: '';
 	display: block;
 	width: 100%;
 	height: 4px;
-  background: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-  background: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-  background: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-  background: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+    background: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+    background: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+    background: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+    background: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
 	animation: bgAni 2s ease-in-out infinite;
-}
-
-#write h2::after,
-#write h3::after,
-#write h4::after,
-#write h5::after,
-#write h6::after {
-	content: '';
-	display: block;
-	height: 2px;
-	width: 100%;
-	background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-	background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-	background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-	background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-}
-
-#write h2::after,
-#write h3::after,
-#write h4::after,
-#write h5::after,
-#write h6::after {
-	animation: bgAni 2s ease-in-out infinite;
-}
-
-
-@keyframes bgAni {
-	to {
-		background-image: -webkit-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-		background-image: -moz-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-		background-image: -ms-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-		background-image: linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-	}
 }
 
 #write h2 {
 	font-size: 1.8em;
-	background: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 25%, var(--base-color-3) 100%);
-	background: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 25%, var(--base-color-3) 100%);
-	background: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 25%, var(--base-color-3) 100%);
-	background: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 25%, var(--base-color-3) 100%);
-	color: transparent;
-	-webkit-background-clip: text;
+	color: var(--base-color-1);
 }
 
 #write h3 {
 	font-size: 1.5rem;
-	background: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 38%, var(--base-color-3) 100%);
-	background: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 38%, var(--base-color-3) 100%);
-	background: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 38%, var(--base-color-3) 100%);
-	background: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 38%, var(--base-color-3) 100%);
-	color: transparent;
-	-webkit-background-clip: text;
+	color: var(--base-color-3);
 }
 
 #write h4 {
 	font-size: 1.3rem;
-	background: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 75%, var(--base-color-3) 100%);
-	background: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 75%, var(--base-color-3) 100%);
-	background: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 75%, var(--base-color-3) 100%);
-	background: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 75%, var(--base-color-3) 100%);
-	color: transparent;
-	-webkit-background-clip: text;
+	color: var(--color-1);
 }
 
 #write h5 {
 	font-size: 1.2rem;
-	background: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 88%, var(--base-color-3) 100%);
-	background: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 88%, var(--base-color-3) 100%);
-	background: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 88%, var(--base-color-3) 100%);
-	background: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 88%, var(--base-color-3) 100%);
-	color: transparent;
-	-webkit-background-clip: text;
+	color: var(--color-3);
 }
 
 #write h6 {
 	font-size: 1.1rem;
-	background: -webkit-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-	background: -moz-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-	background: -ms-linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-	background: linear-gradient(45deg, var(--base-color-3) 0, var(--base-color-2) 50%, var(--base-color-1) 100%);
-	color: transparent;
-	-webkit-background-clip: text;
+	color: var(--color-9);
 }
 
 #write h2::before,
@@ -295,292 +217,52 @@ a {
 #write h4::before,
 #write h5::before,
 #write h6::before {
+	display: block;
 	position: absolute;
 	bottom: 0;
 	left: -6px;
-	display: block;
 	content: '';
 	width: 6px;
-	height: 6px;
-	border-radius: 50%;
+	height: 2rem;
+	/* border-radius: 50%; */
 }
 
-#write h2::before {
-	animation: cicleAniForH2 2s infinite;
+#write h2::after,
+#write h3::after,
+#write h4::after,
+#write h5::after,
+#write h6::after {
+	display: block;
+	content: '';
+	height: 2px;
+	width: 100%;
+}
+
+#write h2::before,
+#write h2::after{
 	background-color: var(--base-color-1);
 }
 
-#write h3::before {
-	animation: cicleAniForH3 3s infinite;
-	background-color: var(--base-color-2);
-}
 
-#write h4::before {
-	animation: cicleAniForH4 4s infinite;
+#write h3::before,
+#write h3::after {
 	background-color: var(--base-color-3);
 }
 
-#write h5::before {
-	animation: cicleAniForH5 5s infinite;
-	background-color: var(--color-1);
-}
-
-#write h6::before {
-	animation: cicleAniForH6 6s infinite;
-	background-color: var(--color-4);
+#write h4::before, 
+#write h4::after {
+    background-color: var(--color-4);
 }
 
 
-/* 直线 */
-@keyframes cicleAniForH1 {
-	0% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(1rem);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
+#write h5::before, 
+#write h5::after {
+    background-color: var(--color-5);
 }
 
-/* L */
-@keyframes cicleAniForH2 {
-	0% {
-		transform: translate(0, -2rem);
-		-webkit-transform: translate(0, -2rem);
-		-moz-transform: translate(0, -2rem);
-		-ms-transform: translate(0, -2rem);
-		-o-transform: translate(0,-2rem);
-	}
-
-	25% {
-		transform: translate(0, 0);
-		-webkit-transform: translate(0, 0);
-		-moz-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		-o-transform: translate(0,0);
-	}
-
-	50% {
-		transform: translate(1rem, 0);
-		-webkit-transform: translate(1rem, 0);
-		-moz-transform: translate(1rem, 0);
-		-ms-transform: translate(1rem, 0);
-		-o-transform: translate(1rem, 0);
-	}
-
-	75% {
-		transform: translate(0, 0);
-		-webkit-transform: translate(0, 0);
-		-moz-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		-o-transform: translate(0,0);
-	}
-	
-	100% {
-		transform: translate(0, -2rem);
-		-webkit-transform: translate(0, -2rem);
-		-moz-transform: translate(0, -2rem);
-		-ms-transform: translate(0, -2rem);
-		-o-transform: translate(0,-2rem);
-	}
-}
-
-/* 三角形 */
-@keyframes cicleAniForH3 {
-	0% {
-		transform: translate(0, 0);
-		-webkit-transform: translate(0, 0);
-		-moz-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		-o-transform: translate(0,0);
-	}
-
-	33.33% {
-		transform: translate(2rem, 0);
-		-webkit-transform: translate(2rem, 0);
-		-moz-transform: translate(2rem, 0);
-		-ms-transform: translate(2rem, 0);
-		-o-transform: translate(2rem,0);
-	}
-
-	66.66% {
-		transform: translate(1rem, -2rem);
-		-webkit-transform: translate(1rem, -2rem);
-		-moz-transform: translate(1rem, -2rem);
-		-ms-transform: translate(1rem, -2rem);
-		-o-transform: translate(1rem, -2rem);
-	}
-
-	100% {
-		transform: translate(0, 0);
-		-webkit-transform: translate(0, 0);
-		-moz-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		-o-transform: translate(0,0);
-	}
-}
-
-/* 正方形 */
-@keyframes cicleAniForH4 {
-	0% {
-		transform: translate(0, -rem);
-		-webkit-transform: translate(0, -2rem);
-		-moz-transform: translate(0, -2rem);
-		-ms-transform: translate(0, -2rem);
-		-o-transform: translate(0, -2rem);
-	}
-
-	25%{
-		transform: translate(0, 0);
-		-webkit-transform: translate(0, 0);
-		-moz-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		-o-transform: translate(0,0);
-	}
-	
-	50%{
-		transform: translate(2rem, 0);
-		-webkit-transform: translate(2rem, 0);
-		-moz-transform: translate(2rem, 0);
-		-ms-transform: translate(2rem, 0);
-		-o-transform: translate(2rem, 0);
-	}
-	
-	75%{
-		transform: translate(2rem, -2rem);
-		-webkit-transform: translate(2rem, -2rem);
-		-moz-transform: translate(2rem, -2rem);
-		-ms-transform: translate(2rem, -2rem);
-		-o-transform: translate(2rem, -2rem);
-	}
-
-	100% {
-		transform: translate(0, -2rem);
-		-webkit-transform: translate(0, -2rem);
-		-moz-transform: translate(0, -2rem);
-		-ms-transform: translate(0, -2rem);
-		-o-transform: translate(0, -2rem);
-	}
-}
-
-/* 五边形 */
-@keyframes cicleAniForH5 {
-	0% {
-		transform: translate(0, -1rem);
-		-webkit-transform: translate(0, -1rem);
-		-moz-transform: translate(0, -1rem);
-		-ms-transform: translate(0, -1rem);
-		-o-transform: translate(0, -1rem);
-	}
-
-	20%{
-		transform: translate(-1rem, 0);
-		-webkit-transform: translate(-1rem, 0);
-		-moz-transform: translate(-1rem, 0);
-		-ms-transform: translate(-1rem, 0);
-		-o-transform: translate(-1rem, 0);
-	}
-	
-	40%{
-		transform: translate(-1rem, 1rem);
-		-webkit-transform: translate(-1rem, 1rem);
-		-moz-transform: translate(-1rem, 1rem);
-		-ms-transform: translate(-1rem, 1rem);
-		-o-transform: translate(-1rem, 1rem);
-	}
-	
-	60%{
-		transform: translate(1rem, 1rem);
-		-webkit-transform: translate(1rem, 1rem);
-		-moz-transform: translate(1rem, 1rem);
-		-ms-transform: translate(1rem, 1rem);
-		-o-transform: translate(1rem, 1rem);
-	}
-
-	80% {
-		transform: translate(1rem, 0);
-		-webkit-transform: translate(1rem, 0);
-		-moz-transform: translate(1rem, 0);
-		-ms-transform: translate(1rem, 0);
-		-o-transform: translate(1rem, 0);
-	}
-	
-	100% {
-		transform: translate(0, -1rem);
-		-webkit-transform: translate(0, -1rem);
-		-moz-transform: translate(0, -1rem);
-		-ms-transform: translate(0, -1rem);
-		-o-transform: translate(0, -1rem);
-	}
-}
-
-/* 六边形
-
-	——
- /		\
- \		/
-	__
- */
-@keyframes cicleAniForH6 {
-	0% {
-		transform: translate(0, -1rem);
-		-webkit-transform: translate(0, -1rem);
-		-moz-transform: translate(0, -1rem);
-		-ms-transform: translate(0, -1rem);
-		-o-transform: translate(0,-1rem);
-	}
-
-	16%{
-		transform: translate(-1rem, 0);
-		-webkit-transform: translate(-1rem, 0);
-		-moz-transform: translate(-1rem, 0);
-		-ms-transform: translate(-1rem, 0);
-		-o-transform: translate(-1rem, 0);
-	}
-	
-	32%{
-		transform: translate(0, 1rem);
-		-webkit-transform: translate(0, 1rem);
-		-moz-transform: translate(0, 1rem);
-		-ms-transform: translate(0, 1rem);
-		-o-transform: translate(0, 1rem);
-	}
-	
-	50%{
-		transform: translate(1rem, 1rem);
-		-webkit-transform: translate(1rem, 1rem);
-		-moz-transform: translate(1rem, 1rem);
-		-ms-transform: translate(1rem, 1rem);
-		-o-transform: translate(1rem, 1rem);
-	}
-	
-	66.25%{
-		transform: translate(2rem, 0);
-		-webkit-transform: translate(2rem, 0);
-		-moz-transform: translate(2rem, 0);
-		-ms-transform: translate(2rem, 0);
-		-o-transform: translate(2rem, 0);
-	}
-	
-	82%{
-		transform: translate(1rem, -1rem);
-		-webkit-transform: translate(1rem, -1rem);
-		-moz-transform: translate(1rem, -1rem);
-		-ms-transform: translate(1rem, -1rem);
-		-o-transform: translate(1rem, -1rem);
-	}
-
-	100% {
-		transform: translate(0, -1rem);
-		-webkit-transform: translate(0, -1rem);
-		-moz-transform: translate(0, -1rem);
-		-ms-transform: translate(0, -1rem);
-		-o-transform: translate(0,-1rem);
-	}
+#write h6::before,
+#write h6::after {
+	background-color: var(--color-6);
 }
 
 #write h2 span,
@@ -590,6 +272,89 @@ a {
 #write h6 span {
 	padding-left: 2rem;
 }
+
+
+@keyframes bgAni {
+	0% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+	}
+	8% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 25%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 25%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 25%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 25%, var(--base-color-3) 100%);
+	}
+	16% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 37.5%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 37.5%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 37.5%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 37.5%, var(--base-color-3) 100%);
+	}
+	24% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+	}
+	32% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 62.5%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 62.5%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 62.5%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 62.5%, var(--base-color-3) 100%);
+	}
+	40% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 75%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 75%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 75%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 75%, var(--base-color-3) 100%);
+	}
+	48% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 87.5%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 87.5%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 87.5%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 87.5%, var(--base-color-3) 100%);
+	}
+	56% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 75%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 75%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 75%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 75%, var(--base-color-3) 100%);
+	}
+	64% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 62.5%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 62.5%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 62.5%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 62.5%, var(--base-color-3) 100%);
+	}
+	72% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
+	}
+	80% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 37.5%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 37.5%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 37.5%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 37.5%, var(--base-color-3) 100%);
+	}
+	88% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 25%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 25%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 25%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 25%, var(--base-color-3) 100%);
+	}
+	100% {
+		background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+		background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+		background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+		background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+	}
+}
+
 
 #write p,
 #write blockquote,
@@ -760,11 +525,11 @@ a {
 	border: 0 none;
 	overflow: hidden;
 	width: 20%;
-	background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-	background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-	background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-	background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 50%, var(--base-color-3) 100%);
-	animation: bgAni 2s infinite;
+	background-image: -webkit-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+	background-image: -moz-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+	background-image: -ms-linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+	background-image: linear-gradient(45deg, var(--base-color-1) 0, var(--base-color-2) 12.5%, var(--base-color-3) 100%);
+	animation: bgAni 10s infinite;
 }
 
 body>#write>h2:first-child {
