@@ -1,55 +1,18 @@
-/* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
-
-@include-when-export url(https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
-
-/* pt-serif-regular - latin */
-@font-face {
-  font-family: 'PT Serif';
-  font-style: normal;
-  font-weight: normal;
-	src: local('PT Serif'), local('PTSerif-Regular'), url('./newsprint/pt-serif-v11-latin-regular.woff2') format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* pt-serif-italic - latin */
-@font-face {
-  font-family: 'PT Serif';
-  font-style: italic;
-  font-weight: normal;
-	src: local('PT Serif Italic'), local('PTSerif-Italic'), url('./newsprint/pt-serif-v11-latin-italic.woff2') format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* pt-serif-700 - latin */
-@font-face {
-  font-family: 'PT Serif';
-  font-style: normal;
-  font-weight: bold;
-	src: local('PT Serif Bold'), local('PTSerif-Bold'), url('./newsprint/pt-serif-v11-latin-700.woff2') format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* pt-serif-700italic - latin */
-@font-face {
-  font-family: 'PT Serif';
-  font-style: italic;
-  font-weight: bold;
-	src: local('PT Serif Bold Italic'), local('PTSerif-BoldItalic'), url('./newsprint/pt-serif-v11-latin-700italic.woff2') format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 :root {
-	--active-file-bg-color: rgba(255, 250, 232, .8);
-	--active-file-text-color: white;
+	--active-file-bg-color: #e8dfc4;
+	--active-file-text-color:  #6ab98d;
 	--bg-color: #f3f2ee;
 	--text-color: #1f0909;
 	--control-text-color: #444;
 	--rawblock-edit-panel-bd: #e5e5e5;
 
-	--select-text-bg-color: rgba(32, 43, 51, 0.63);
-  --select-text-font-color: white;
+	--select-text-bg-color: #e8dfc4;
+	--select-text-font-color: #6ab98d;
 }
 
 pre {
-	--select-text-bg-color: #fbed96;
-	--select-text-font-color: #4481eb;
+	--select-text-bg-color: #e8dfc4;
+	--select-text-font-color: #6ab98d;
 	border: 1px solid #04befe;
 	box-shadow: 2px 2px 10px #e5e5e5;
 }
@@ -59,7 +22,7 @@ html {
 }
 
 html, body {
-	background-color: var(--active-file-bg-color);
+	background-color: #faf6e6;
 	font-family: "PT Serif", 'Times New Roman', Times, serif;
 	color: #8A2387;
 	line-height: 1.5em;
@@ -85,8 +48,8 @@ html, body {
 #write h5,
 #write h6 {
 	font-weight: bold;
-	margin-bottom: 1.5em;
-	margin-top: 2em;
+	margin-bottom: .75em;
+	margin-top: 1em;
 	/* background: linear-gradient(to right, #a8ff78 0%, #78ffd6 100%); */
 	animation: font-gradient-ani 2s ease-in infinite;
 	color: transparent;
@@ -136,22 +99,27 @@ html, body {
 
 #write h2 {
 	font-size: 1.8em;
+	margin-left: .5em;
 }
 
 #write h3 {
-	font-size: 1.75;
+	font-size: 1.75em;
+	margin-left: .65em;
 }
 
 #write h4 {
 	font-size: 1.65em;
+	margin-left: .75em;
 }
 
 #write h5 {
-	font-size: 1.55;
+	font-size: 1.55em;
+	margin-left: .85em;
 }
 
 #write h6 {
-	font-size: 1.45;
+	font-size: 1.45em;
+	margin-left: .95em;
 }
 
 
@@ -208,13 +176,11 @@ q:after {
 }
 
 blockquote {
-	border-left: 5px solid;
-	padding-left: 1em;
-	border-color: yellow;
 	color: #8A2387;
-	/* background: linear-gradient(45deg, #8A2387 0%, #E94057 50%, #F27121 100%); */
-	background: linear-gradient(to right, #a8ff78 0%, #78ffd6 100%);
-	box-shadow: 2px 2px 2px #a8ff78;
+	padding: 10px 20px;
+	margin: 0 0 20px;
+	border-left: 4px solid #eeeeee;
+	background-color: rgba(238,238,238, .5);
 }
 blockquote ul,
 blockquote ol {
@@ -270,9 +236,7 @@ code {
 #write strong,
 #write em,
 #write strong em {
-	background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
-	color: transparent;
-	-webkit-background-clip: text;
+	color: #6ab98d;
 }
 
 #write strong,
