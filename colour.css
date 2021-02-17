@@ -1,3 +1,5 @@
+body, div, img,dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td {margin:0; padding:0;}  
+
 :root {
 	--active-file-bg-color: #e8dfc4;
 	--active-file-text-color:  #6ab98d;
@@ -178,11 +180,10 @@ q:after {
 }
 
 blockquote {
-	color: #8A2387;
 	padding: 10px 20px;
 	margin: 0 0 20px;
-	border-left: 4px solid #eeeeee;
-	background-color: rgba(238,238,238, .5);
+	border-left: 4px solid #ffe564;
+	background-color: #FFF7D0;
 }
 blockquote ul,
 blockquote ol {
@@ -199,8 +200,8 @@ tt {
 /* 代码段 */
 code {
 	padding: 2px 2px;
-	background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
-	color: #FFFFFF;
+	background-color: #F3ECC7;
+	color: #F86052;
 }
 
 #write tt {
@@ -350,12 +351,17 @@ code {
 }
 
 #write thead {
-	background-color: #1FA2FF;
+	background-color: #72C5D2;
 }
 
 #write tbody tr:nth-child(even) {
-	background: #A6FFCB;
+	background-color: #AAE9BB;
 }
 #write tbody tr:nth-child(odd) {
-	background-color: #12D8FA;
+	background-color: #AAD9B9;
+}
+
+#write tbody tr:hover {
+	background-color: #AAD999;
+	color: #ffffff;
 }
