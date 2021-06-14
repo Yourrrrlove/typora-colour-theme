@@ -11,7 +11,7 @@ body, div, img,dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, 
 	--select-text-bg-color: #e8dfc4;
 	--select-text-font-color: #6ab98d;
 	
-	--font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace 
+	--font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 pre {
@@ -22,19 +22,21 @@ pre {
 }
 
 html {
-	font-size: 16px;
+	font-size: 12px;
 }
 
 html, body {
 	background-color: #faf6e6;
 	font-family: var(--font-family);
 	color: #8A2387;
-	line-height: 1.5em;
+	line-height: 1.2em;
 }
 
 #write {
 	max-width: 40em;
 	min-width: 40em;
+	font-size: 1.334rem;
+	line-height: 1.42rem;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -61,11 +63,12 @@ html, body {
 }
 
 #write h1 {
-	font-size: 1.875em;
-	line-height: 1.8em;
+	font-size: 3rem;
+	line-height: 3.2rem;
 	margin-top: 2em;
 	text-align: center;
 	margin-bottom: .5em;
+
 }
 
 @keyframes font-gradient-ani{
@@ -130,8 +133,8 @@ html, body {
 
 
 #write h2 {
-	font-size: 1.6em;
-	margin-left: .5em;
+	font-size: 2.5rem;
+	line-height: 3.2rem;
 }
 
 #write h2::before {
@@ -140,8 +143,8 @@ html, body {
 }
 
 #write h3 {
-	font-size: 1.45em;
-	margin-left: .65em;
+	font-size: 2rem;
+	line-height: 3.2rem;
 }
 
 #write h3::before {
@@ -150,8 +153,8 @@ html, body {
 }
 
 #write h4 {
-	font-size: 1.35em;
-	margin-left: .75em;
+	font-size: 1.5rem;
+	line-height: 1.67rem;
 }
 
 #write h4::before {
@@ -160,8 +163,8 @@ html, body {
 }
 
 #write h5 {
-	font-size: 1.2em;
-	margin-left: .85em;
+	font-size: 1.17rem;
+	line-height: 1.67rem;
 }
 
 #write h5::before {
@@ -170,8 +173,8 @@ html, body {
 }
 
 #write h6 {
-	font-size: 1.15em;
-	margin-left: .95em;
+	font-size: 1rem;
+	line-height: 1.67rem;
 }
 
 #write h6::before {
@@ -218,39 +221,39 @@ html, body {
 }
 
 /* 代码块 */
-blockquote,
-q {
+#write blockquote,
+#write q {
 	quotes: none;
 	margin-bottom: 1.5em;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+#write blockquote:before,
+#write blockquote:after,
+#write q:before,
+#write q:after {
 	content: '';
 	content: none;
 }
 
-blockquote {
+#write blockquote {
 	padding: 10px 20px;
 	margin: 0 0 20px;
 	border-left: 4px solid #ffe564;
 	background-color: #FFF7D0;
 }
-blockquote ul,
-blockquote ol {
+#write blockquote ul,
+#write blockquote ol {
 	margin-left:0;
 }
 
-pre,
-code,
-tt {
-	font-size: .875em;
-	line-height: 1.714285em;
+#write pre,
+#write code,
+#write tt {
+	font-size: .1.35em;
+	line-height: 1.7em;
 }
 
 /* 代码段 */
-code {
+#write code {
 	padding: 2px 2px;
 	background-color: #F3ECC7;
 	color: #F86052;
@@ -417,4 +420,8 @@ code {
 #write tbody tr:hover {
 	background-color: #AAD999;
 	color: #ffffff;
+}
+
+.md-fences {
+  font-size: inherit;
 }
